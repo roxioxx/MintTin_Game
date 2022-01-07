@@ -1,0 +1,75 @@
+<div class="container-fluid">
+    <div class="row" style="min-height: 100vh;">
+
+        <!--All the Cards -->
+        <div class="col-9">
+            <div class="container-fluid pt-4">
+                <div class="d-flex justify-content-evenly flex-wrap align-items-stretch">
+
+                    <% topDeck.forEach(function(deckCard) { %>
+                        <div>
+                            <div class="card p-1 my-2" id="<%= deckCard._id %>">
+                                <div class="mx-auto">
+                                    <img src="img/cardDeck/<%= deckCard.shortname %>.png">
+                                </div>
+
+                                <div class="p-2">
+                                    <p>
+                                        <%= deckCard._id %>
+                                    </p>
+                                    <p>
+                                        <%= deckCard.effect %>
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <% }); %>
+
+                </div>
+            </div>
+            <p style="padding-bottom: 3rem;"> </p>
+        </div>
+
+        <!--Add the Cards-->
+        <div class="col-3 bg-dark text-light pt-4">
+            <h2>Add a card</h2>
+
+            <!--Errors and Success Messages Shown Here-->
+            <% if(locals.errors) { %>
+                <div class="alert alert-danger">
+                    <ul>
+                        <% errors.forEach(function(error) { %>
+                            <li>
+                                <%=error.msg%>
+                            </li>
+                            <% }); %>
+                    </ul>
+                </div>
+                <% } else if (locals.successMessage) { %>
+                    <div class="alert alert-success">
+                        <%=successMessage%>
+                    </div>
+                    <% } %>
+
+                        <!--Form Start Cards-->
+                        <form method="POST" action="/cardDeck">
+                            <div class="my-3">
+                                <label for="input_id" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="input_id" name="_id" autofocus>
+                                <div id="input_id" class="form-text">Should be a unique name from the rest.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="input2" class="form-label">Effect</label>
+                                <input type="text" class="form-control" id="input2" name="effect">
+                            </div>
+                            <div class="mb-3">
+                                <label for="input3" class="form-label">Variable Name</label>
+                                <input type="text" class="form-control" id="input3" name="shortname">
+                                <div id="input3" class="form-text">Variable used for retrieving the image file and others. No spaces or special characters.</div>
+                            </div>
+                            <button type="submit" class="btn btn-primary" disabled>Submit</button>
+                        </form>
+        </div>
+    </div>
+</div>

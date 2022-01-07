@@ -1,0 +1,88 @@
+<div class="container-fluid">
+    <div class="row ">
+        <div class="col-9" id="fullBoard">
+
+            <!-- World Map -->
+            <img src="/img/Timeline 1_00000.png" id="worldMap" draggable="false" />
+
+            <p class="bg-light p-2" style="position: absolute; left: 20px; top: 20px;"> Drag These Game Pieces onto the Board
+            </p>
+            <!-- Game Peices -->
+            <img src="/img/pawn.png" height="8%" draggable="true" id="pawn" style="position: absolute; left: 50px; top: 60px;" />
+            <img src="/img/face01.png" height="8%" draggable="true" id="face01" style="position: absolute; left: 50px; top: 160px;" />
+            <img src="/img/face02.png" height="8%" draggable="true" id="face02" style="position: absolute; left: 50px; top: 260px;" />
+            <img src="/img/face03.png" height="8%" draggable="true" id="face03" style="position: absolute; left: 50px; top: 360px;" />
+            <img src="/img/face04.png" height="8%" draggable="true" id="face04" style="position: absolute; left: 50px; top: 460px;" />
+
+        </div>
+        <div class="col-3" style="background-color:#5cadc3; z-index: 2; position: relative; min-height: 100vh; max-height: fit-content;">
+
+            <div>
+                <p class="mt-3">
+                    Selected Character <img src="/img/pawn.png" height="auto" />
+                </p>
+            </div>
+
+            <!-- Selected Character Card Here-->
+            <% topDeck.forEach(function(deckCard) { %>
+                <%if (deckCard.shortname==locals.selectedCharacter) { %>
+                    <div class="card p-2 my-2 mx-0" style="min-height:fit-content ;max-height: 180px; width: 160px;">
+                        <img src="img/Character/<%= deckCard.shortname %>_01.png" class="mx-auto my-2" style="height:fit-content; width: fit-content;">
+                        <p class="text-center mt-2">
+                            <%=deckCard.name %>
+                        </p>
+                    </div>
+                    <% } else { return } %>
+
+                        <% }); %>
+                            <br>
+                            <!-- Other Decks are here-->
+
+                            <div class="row" id="drawArea">
+                                <!-- Events Deck-->
+
+                                <div class="col">
+                                    <p>Story Deck</p>
+                                    <div style="position: relative;">
+                                        <div class="card">
+                                            <img src="/img/storyDeck.png">
+                                        </div>
+                                        <div class="twoDecks card">
+                                            <img src="/img/storyDeck.png">
+                                        </div>
+
+                                    </div>
+                                    <p>Draw one each turn.<br> You cannot put the card away until it is resolved.</p>
+                                </div>
+
+
+                                <!-- Character Deck-->
+                                <div class="col">
+                                    <p>Your Deck</p>
+                                    <div style="position: relative;">
+                                        <div class="card">
+                                            <img src="/img/yourDeck.png">
+                                        </div>
+                                        <div class="twoDecks card">
+                                            <img src="/img/yourDeck.png">
+                                        </div>
+                                        <div class="text-light bg-dark py-1 px-3 rounded-2 text-center position-absolute top-100 start-50 translate-middle" style="z-index: 7;">
+                                            x20
+                                        </div>
+                                    </div>
+                                    <p>Draw as needed.<br> The game ends when you run out.</p>
+
+                                </div>
+
+                            </div>
+                            <hr class="p-0 m-0" />
+                            <div class="row">
+                                <div class="col">
+                                    <p>Total Humans Drained</p>
+                                    <button class="btn btn-primary">+ Add</button>
+                                </div>
+                            </div>
+                            <p style="padding-bottom: 3rem;"> </p>
+        </div>
+    </div>
+</div>

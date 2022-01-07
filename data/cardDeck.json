@@ -1,0 +1,27 @@
+[{
+        "_id": "Enchanting Song",
+        "effect": "Enchants human and draws them closer.",
+        "shortname": "es1"
+    },
+    { "_id": "Paralysis", "effect": "An intense stare freezes human in place.", "shortname": "par1" },
+    {
+        "_id": "Haunting Song",
+        "effect": "Induces fear in human and repels them.",
+        "shortname": "hs1"
+    },
+    {
+        "_id": "Moonlit Butterfly",
+        "effect": "False butterfly flutters past distracting human from their task.",
+        "shortname": "mb1"
+    },
+    {
+        "_id": "Pristinely Smooth",
+        "effect": "Brushes past target, revealing the texture of its skin.",
+        "shortname": "st1"
+    },
+    {
+        "_id": "Psionic Force",
+        "effect": "Light hypnosis taking control of a human's subconsiousness.",
+        "shortname": "pf1"
+    }
+]

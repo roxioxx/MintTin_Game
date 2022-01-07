@@ -1,0 +1,30 @@
+<div class="container my-3">
+    <div class="d-flex justify-content-evenly flex-wrap align-items-stretch">
+
+        <% traitsThings.forEach(function(deckCard) { %>
+
+            <div class="card p-1 my-2" id="<%= deckCard._id %>">
+                <div id="traitValue" class="position-absolute bottom-0 end-0 text-primary bg-info px-3 m-1 rounded-1">Lv. 0
+                </div>
+                <div class="mx-auto">
+                    <img src="img/traits/<%= deckCard.shortname %>.png">
+                </div>
+
+                <div class="p-2">
+                    <p>
+                        <%= deckCard._id %>
+                    </p>
+                    <p>
+                        <%= deckCard.effect %>
+                    </p>
+                </div>
+
+            </div>
+
+            <% }); %>
+
+
+
+    </div>
+    <p style="padding-bottom: 3rem;"> </p>
+</div>

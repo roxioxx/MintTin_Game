@@ -1,0 +1,46 @@
+[{
+        "_id": "Eloquence",
+        "effect": "Charm Humans more and makes it easier to work with them.",
+        "shortname": "eloquence"
+    },
+    {
+        "_id": "Intelligence",
+        "effect": "Reduces the attempts it takes to hack a complex computer program.",
+        "shortname": "intelligence"
+    },
+    {
+        "_id": "Mental Strength",
+        "effect": "How much pain, emotional or physical, they can take.",
+        "shortname": "mentalStrength"
+    },
+    {
+        "_id": "Stealth",
+        "effect": "Higher skill makes it harder to spot when shadowed.",
+        "shortname": "stealth"
+    },
+    {
+        "_id": "Psychology",
+        "effect": "Higher skills helps figure out the puzzle of the human mind quicker.",
+        "shortname": "psychology"
+    },
+    {
+        "_id": "Investigation",
+        "effect": "Ability to spot clues increases. You will also work better with detectives.",
+        "shortname": "investigation"
+    },
+    {
+        "_id": "Physical Strength",
+        "effect": "The strength of how many humans that have been absorbed.",
+        "shortname": "physicalStrength"
+    },
+    {
+        "_id": "Occultism",
+        "effect": "Ability to perform rituals increases. You will also work better with occultists.",
+        "shortname": "occultism"
+    },
+    {
+        "_id": "Compassion",
+        "effect": "Allows for deeper relationships with humans. Lower levels makes character more evil.",
+        "shortname": "compassion"
+    }
+]

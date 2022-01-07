@@ -1,0 +1,22 @@
+<div class="d-flex">
+    <div class="col">
+        <img src="/img/Character/<%=deckCard.shortname%>_02.png" style="height: 100vh;" class="position-absolute top-50 start-50 translate-middle">
+    </div>
+    <div class="col-4  position-absolute top-50 start-0 translate-middle-y">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col bg-light p-2">
+                <h1>
+                    <%= deckCard.name %>
+                </h1>
+                <p><span class="label">Story:</span> <br>
+                    <%= deckCard.story %>
+                </p>
+                <p><span class="label">Effect:</span> <br>
+                    <%= deckCard.effect %>
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>

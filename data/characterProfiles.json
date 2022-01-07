@@ -1,0 +1,37 @@
+[{
+        "_id": "Alle Fier",
+        "shortname": "Alle",
+        "effect": "Extra compassion and eloquence stays at 0.",
+        "story": "An innocent succubus. It would prefer to make friends with all living things."
+    },
+    {
+        "_id": "Lexi Blaze",
+        "shortname": "Lexi",
+        "effect": "Can double the effect of any butterfly card.",
+        "story": "A succubus who is the perfect cheerleader -- preppy, happy, and gorgeous."
+    },
+    {
+        "_id": "Xana Prince",
+        "shortname": "Xana",
+        "effect": "Can double the effect of any chevalier card.",
+        "story": "A succubus who demands to be treated like a princess."
+    },
+    {
+        "_id": "Lex Celeste",
+        "shortname": "Lex",
+        "effect": "Extra intelligence and investigation skill.",
+        "story": "An incubus who poses as a lawyer. He'll lead to the doom of his target and then replace them with their powerful clients."
+    },
+    {
+        "_id": "Xander Nightingale",
+        "shortname": "Xander",
+        "effect": "Extra intelligence and compassion stays at 0.",
+        "story": "An incubus who relishes in the pain of others. Calling him a sadist is an understatement."
+    },
+    {
+        "_id": "Darien Rose",
+        "shortname": "Darien",
+        "effect": "Can double the effect of any song card.",
+        "story": "An incubus who has become a socialite reaching the Billboard top 10 through his enchanting voice."
+    }
+]

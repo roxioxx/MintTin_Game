@@ -1,0 +1,35 @@
+<div class="container mt-3">
+    <div class="d-flex justify-content-evenly flex-wrap align-items-stretch">
+
+        <% topDeck.forEach(function(deckCard) { %>
+
+            <div class="card characterCard p-1 my-2" id="<%= deckCard.name %>">
+
+                <div class="mx-auto">
+                    <a href="/characterProfile/<%=deckCard.shortname%>">
+                    <img src="img/Character/<%= deckCard.shortname %>_01.png">
+                </a>
+                </div>
+
+                <div class="p-2">
+                    <p>
+                        <%= deckCard.name %>
+                    </p>
+                    <p>
+                        <%= deckCard.effect %>
+                    </p>
+
+                    <%if (deckCard.shortname==locals.selectedCharacter) { %>
+                        <div id="traitValue" class="position-absolute bottom-0 start-50 translate-middle-x text-light py-1 text-center" style="width: 100%; background-color: blueviolet;">Selected
+                        </div>
+                        <% } %>
+                </div>
+
+            </div>
+            <% }); %>
+
+
+
+    </div>
+    <p style="padding-bottom: 3rem;"> </p>
+</div>
